@@ -33,7 +33,7 @@ $ sls invoke --function bot
    - `/start`: Begin the conversation and see the list of available movies as buttons.
    - Click on a movie button to see the available cinemas for that movie.
    - Click on a cinema button to see the movie timings for different days.
-   - Click on a day's timing to view the showtimes for that movie at the selected cinema on that day.
+   - Click on a day\'s timing to view the showtimes for that movie at the selected cinema on that day.
 
 ## Customization
 
