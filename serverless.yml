@@ -1,5 +1,4 @@
-service: docker-selenium-lambda
-
+service: GVTeleBot
 provider:
   name: aws
   stage: ${opt:stage, 'prod'}
