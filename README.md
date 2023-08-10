@@ -60,14 +60,22 @@ This project is based on the `docker-selenium-lambda` template by umihico, which
 
 ## Screenshots
 
-![Screenshot of start command](https://gvbotimages.s3.ap-southeast-1.amazonaws.com/start.PNG)
-*The start command displays a list of movies as buttons.*
 
+<img src="https://gvbotimages.s3.ap-southeast-1.amazonaws.com/start.PNG" alt="Screenshot of start command" width="400"/>
+<br>
+<em>The start command displays a list of movies as buttons.</em>
 
-![Screenshot of movie selection](https://gvbotimages.s3.ap-southeast-1.amazonaws.com/movies.PNG)
-*Clicking on a movie displays the list of available cinemas as buttons.*
+<br>
 
+<img src="https://gvbotimages.s3.ap-southeast-1.amazonaws.com/movies.PNG" alt="Screenshot of start command" width="400"/>
+<br>
+<em>Clicking on a movie displays the list of available cinemas as buttons.
+</em>
 
-![Screenshot of cinema selection](https://gvbotimages.s3.ap-southeast-1.amazonaws.com/cinemas.PNG)
-*Clicking on a cinema button displays the list of available timings for different days.*
+<br>
+
+<img src="https://gvbotimages.s3.ap-southeast-1.amazonaws.com/cinemas.PNG" alt="Screenshot of start command" width="400"/>
+<br>
+<em>Clicking on a cinema button displays the list of available timings for different days.
+</em>
 
