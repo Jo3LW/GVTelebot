@@ -6,7 +6,6 @@ import re
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import NoSuchElementException
 
 import telebot
 
@@ -29,7 +28,7 @@ def handler(event=None, context=None):
     driver = webdriver.Chrome("/opt/chromedriver",
                             options=options)
     # Telegram Bot API token
-    BOT_TOKEN = '6542414604:AAHc3LpkR5Ukxfy-TwAJgd27MvuH6FED-q8'
+    BOT_TOKEN = 'YOUR_BOT_TOKEN'
     bot = telebot.TeleBot(BOT_TOKEN)
 
     movie_cinemas = {}
