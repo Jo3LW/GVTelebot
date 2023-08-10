@@ -16,7 +16,7 @@ Before deploying and using GVTelebot, make sure you have the following:
 - [AWS Account](https://aws.amazon.com/)
 - [Telegram Bot API Token](https://core.telegram.org/bots#botfather)
 
-## Running the demo
+## Running the bot
 
 ```bash
 $ npm install -g serverless # skip this line if you have already installed Serverless Framework
@@ -24,6 +24,21 @@ $ export AWS_REGION=ap-northeast-1 # You can specify region or skip this line. u
 $ sls create --template-url "https://github.com/Jo3LW/GVTelebot/tree/main" --path dGVTeleBot && cd $_
 $ sls deploy
 $ sls invoke --function bot
+
+
+## Configuration
+Before deploying and using this bot, you need to set up your own Telegram Bot API token. Follow these steps:
+
+1. Create a new bot on Telegram by talking to the [BotFather](https://core.telegram.org/bots#botfather).
+2. Copy the generated API token.
+3. Open the `main.py` file in the `GVTeleBot` directory.
+4. Find the following lines:
+
+```python
+# Telegram Bot API token
+BOT_TOKEN = 'YOUR_BOT_TOKEN'
+bot = telebot.TeleBot(BOT_TOKEN)
+
 
 ## Usage
 
