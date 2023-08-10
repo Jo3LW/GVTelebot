@@ -24,7 +24,7 @@ $ export AWS_REGION=ap-northeast-1 # You can specify region or skip this line. u
 $ sls create --template-url "https://github.com/Jo3LW/GVTelebot/tree/main" --path dGVTeleBot && cd $_
 $ sls deploy
 $ sls invoke --function bot
-
+```
 
 ## Configuration
 Before deploying and using this bot, you need to set up your own Telegram Bot API token. Follow these steps:
@@ -34,12 +34,12 @@ Before deploying and using this bot, you need to set up your own Telegram Bot AP
 3. Open the `main.py` file in the `GVTeleBot` directory.
 4. Find the following lines:
 
-```python
-# Telegram Bot API token
-BOT_TOKEN = 'YOUR_BOT_TOKEN'
-bot = telebot.TeleBot(BOT_TOKEN)
-
-
+   ```python
+   # Set your Telegram Bot API token here
+   BOT_TOKEN = 'YOUR_BOT_TOKEN'
+   bot = telebot.TeleBot(BOT_TOKEN)
+   ```
+5. Replace 'YOUR_BOT_TOKEN' with your actual API token.
 ## Usage
 
 1. Start a chat with your Telegram bot by searching for its username.
@@ -57,4 +57,17 @@ You can customize and extend the functionality of GVTelebot by modifying the `ma
 ## Credits
 
 This project is based on the `docker-selenium-lambda` template by umihico, which enables running headless Chrome and Selenium on AWS Lambda.
+
+## Screenshots
+
+![Screenshot of start command](https://gvbotimages.s3.ap-southeast-1.amazonaws.com/start.PNG)
+*The start command displays a list of movies as buttons.*
+
+
+![Screenshot of movie selection](https://gvbotimages.s3.ap-southeast-1.amazonaws.com/movies.PNG)
+*Clicking on a movie displays the list of available cinemas as buttons.*
+
+
+![Screenshot of cinema selection](https://gvbotimages.s3.ap-southeast-1.amazonaws.com/cinemas.PNG)
+*Clicking on a cinema button displays the list of available timings for different days.*
 

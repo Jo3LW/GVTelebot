@@ -27,7 +27,8 @@ def handler(event=None, context=None):
     options.add_argument("--remote-debugging-port=9222")
     driver = webdriver.Chrome("/opt/chromedriver",
                             options=options)
-    # Telegram Bot API token
+    
+    # Set your Telegram Bot API token here
     BOT_TOKEN = 'YOUR_BOT_TOKEN'
     bot = telebot.TeleBot(BOT_TOKEN)
 
